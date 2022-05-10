@@ -14,7 +14,7 @@ public class Tarea_C9_1 {
 						"Libras to Kilogramos", JOptionPane.ERROR_MESSAGE, null);
 				System.exit(-1);
 			}
-			pesoKgr = pesoLibras / 2.2;
+			pesoKgr = pesoLibras / 2.205;
 			JOptionPane.showMessageDialog(null, "Tu peso en Kgr es: " + String.format("%.3f", pesoKgr),
 					"Conversion de peso", JOptionPane.INFORMATION_MESSAGE, null);
 		} catch (NumberFormatException ne) {

@@ -9,13 +9,13 @@ public class Tarea_C9_4 {
 			String cadena2;
 			cadena1 = JOptionPane.showInputDialog(null, "introduzca una palabra");
 			if (cadena1.contains(" ")) {
-				JOptionPane.showMessageDialog(null, "Te he pedido una palabra, no una frase", "Comparar Cadenas",
+				JOptionPane.showMessageDialog(null, "Te he pedido una palabra, no una frase", "Comparacion de Cadenas",
 						JOptionPane.ERROR_MESSAGE, null);
 				System.exit(-1);
 			}
 			cadena2 = JOptionPane.showInputDialog(null, "introduzca una palabra");
 			if (cadena2.contains(" ")) {
-				JOptionPane.showMessageDialog(null, "Te he pedido una palabra, no una frase", "Comparar Cadenas",
+				JOptionPane.showMessageDialog(null, "Te he pedido una palabra, no una frase", "Comparacion de Cadenas",
 						JOptionPane.ERROR_MESSAGE, null);
 				System.exit(-1);
 			}

@@ -9,7 +9,7 @@ public class Tarea_C10_4 {
 		System.out.println("Introduzca un numero entero posivo");
 		int numero = sc.nextInt();
 		if (numero < 0) {
-			System.out.println("Introduzca un numero entero posivo, por favor");
+			System.out.println("Introduzca un numero entero positivo, por favor");
 			System.exit(-1);
 		}
 		if (numero == 0) {

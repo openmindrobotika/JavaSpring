@@ -3,6 +3,7 @@ package proyecto_c10;
 public class Tarea_C10_5 {
 	public Tarea_C10_5() {
 		int numero = 0;
+		System.out.println(0%2);
 		while (numero <= 1000) {
 			if (esPrimo(numero)) {
 				System.out.println(numero);

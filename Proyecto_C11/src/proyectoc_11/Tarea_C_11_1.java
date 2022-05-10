@@ -7,9 +7,9 @@ public class Tarea_C_11_1 {
 				{ "Asier", "Reshad", "David" }, { "Rafa", "Ana", "Garbiñe" } };
 
 		for (int i = 0; i < mesas.length; i++) {
-			System.out.printf ("En la mesa %d estan ",i);
+			System.out.printf ("En la mesa %d estan ",i+1);
 			for (int j = 0; j < mesas[i].length; j++) {
-				System.out.printf("%s ", mesas[i][j]);
+				System.out.printf("%s ,", mesas[i][j]);
 			}
 			System.out.println("");
 		}

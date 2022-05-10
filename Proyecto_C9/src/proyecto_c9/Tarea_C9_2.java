@@ -22,7 +22,7 @@ public class Tarea_C9_2 {
 						JOptionPane.ERROR_MESSAGE, null);
 				System.exit(-1);
 			}
-			if (edad < 25 && edad <= 25) {
+			if (edad < 25) {
 				totalSeguro = PRIMA + 100;
 			}
 			partes = Integer.parseInt(JOptionPane.showInputDialog(null, "Cuantos partes has dado este año?"));
