@@ -7,24 +7,16 @@ import javax.swing.JOptionPane;
 public class Menu {
 	static String[] elementos = new String[10];
 	static ArrayList<Cesta> cestas = new ArrayList<Cesta>();
-	static boolean hayCesta = false;
-	String tipo;
 	public Menu(ArrayList<ProductoDisponible> productos) {
 		int bien;
 		boolean salir = true;
-		
+
 		do {
 			try {
-				if (!hayCesta) {
-				 tipo = (JOptionPane.showInputDialog(null, "Selecciona opción", "Tienda PEPE",
+				String tipo = (JOptionPane.showInputDialog(null, "Selecciona opción", "Tienda PEPE",
 						JOptionPane.QUESTION_MESSAGE, null,
 						new Object[] { "Consulta lista de productos", "Añadir producto a la cesta", "Salir" },
-						"Consulta lista de productos")).toString();}
-				if (hayCesta) {
-				 tipo = (JOptionPane.showInputDialog(null, "Selecciona opción", "Tienda PEPE",
-							JOptionPane.QUESTION_MESSAGE, null,
-							new Object[] { "Consulta lista de productos", "Añadir producto a la cesta","Pasar por caja", "Salir" },
-							"Consulta lista de productos")).toString();}
+						"Consulta lista de productos")).toString();
 				bien = 1;
 				switch (tipo) {
 
@@ -65,11 +57,9 @@ public class Menu {
 			int cantidad = añadeACesta();
 			if (cantidad > 0) {
 				for(int i = 0; i < productos.size(); i++)
-				 if (productos.get(i).getNombre().equals(eleccion)) { 
+				 if (productos.get(i).getNombre().equals(eleccion)) {
 					cestas.add (new Cesta(productos.get(i).getNombre(),productos.get(i).getPrecioSinIva(),cantidad,((double)cantidad*productos.get(i).getIVA()*productos.get(i).getPrecioSinIva()))) ;
 				 }
-				hayCesta=true;
-				
 			}
 			
 		}
